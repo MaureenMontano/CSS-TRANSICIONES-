@@ -1,0 +1,41 @@
+li {
+    list-style: none;
+    background-color: blue;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1 {
+    color: blueviolet;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    color: white;
+    width: 175px;
+    list-style: none;
+}
+
+.texto1 {
+    color:cadetblue;
+}
+
+.texto2 {
+    color: darkorange;
+}
+
+.texto3 {
+    margin-left: 10px;
+    color: black;
+}
+
+li:hover{
+    border: 2px solid red;
+}
+

@@ -1,0 +1,30 @@
+li {
+    color: crimson;
+}
+
+h1 {
+    color: blueviolet;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: tomato; 
+    color: white;
+}
+
+.texto1 {
+    color:cadetblue;
+}
+
+.texto2 {
+    color: darkorange;
+}
+
+.texto3 {
+    margin-left: 10px;
+    color: black;
+}

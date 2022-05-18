@@ -1,0 +1,26 @@
+h1 {
+    color:crimson;
+    border-top: cornflowerblue;
+}
+
+h2 {
+    color: darkred;
+}
+
+li {
+    color:darkgreen;
+}
+
+ol li {
+    color: #00f;
+}
+
+ul li span {
+    color:#00f;
+}
+P {
+    color: #00f;
+}
+*{
+    background-color:#cfc;
+}

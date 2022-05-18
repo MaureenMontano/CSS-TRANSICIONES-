@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="slide_from_top">Deslizar hacia arriba</button>
+        <button class="slide_from_bottom">Deslizar hacia abajo</button>
+        <button class="slide_from_left">Deslizar hacia izquierda</button>
+        <button class="slide_from_right">Deslizar hacia derecha</button>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .wrapper{
+        max-width: 65rem;
+        width: 100%;
+        margin: 2rem auto;
+        padding: 5rem;
+        text-align: center;
+        background: #fff;
+        border: 0.5rem solid #34495e;   
+    }
+
+    button {
+        font-size: 2rem;
+        background: #3498db;
+        color: #fff;
+        border: 0.25rem solid #3498db;
+        padding: 0.85rem 0.75rem;
+        margin: 1rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        width: 300px;
+    }
+
+    button:hover{
+        color: #3498db;
+    }
+
+    button::after {
+        content: "";
+        background: #ecf0f1;
+        position: absolute;
+        z-index: -1;
+        padding: 0.85rem 0.75rem;
+        display: block;
+    }
+
+    button[class^="slide"]::after{
+        transition: all 0.35s;
+    }
+
+    button[class^="slide"]:hover::after{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all 0.35s;
+    }
+
+    button.slide_from_top::after{
+        top: -100%;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    button.slide_from_bottom::after{
+        top: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    button.slide_from_left::after{
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: -100%;
+    }
+
+    button.slide_from_right::after{
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+    }
+    
+
+
+
+</style>
